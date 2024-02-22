@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* Sidebar Area */
+/* Position and sizing of burger button */
+.bm-burger-button{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 40px;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+  
+/* Color/shape of burger icon bars */
+.bm-burger-bars{
+    background-color: white !important;
+}
+  
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #343434;
+    transition: 1s;
+}
+  
+/* Position and sizing of clickable cross button */
+.bm-cross-button{
+    height: 24px;
+    width: 24px;
+}
+  
+/* Color/shape of close button cross */
+.bm-cross{
+    background-color: white !important;
+}
+  
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: absolute;
+    height: 100%;
+}
+  
+/* General sidebar styles */
+.bm-menu{
+    background-color: rgb(0, 0, 0) !important;
+    padding: 7.5rem 1.5rem 0;
+    font-size: 1.15rem;
+}
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: rgba(0, 0, 0, 0.0) !important;
+  }
+  
+/* Wrapper for item list */
+.bm-item-list{
+    color: white !important;
+    padding: 0.8rem;
+}
+.bm-item-list:hover{
+    color: #1baa80 !important;
+    transition: 1s;
+}
+  
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+  
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* Top Navbar
+.mainNavBar{
+    position: absolute;
+    z-index: 999;
+}
+.navigationBar{
+    background-color: rgba(0, 0, 0, 0.038);
+    opacity: .80;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+.navigationBarScroll{
+    background-color: white;
+    opacity: 1;
+    padding: .65rem 0;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.125);
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+.navBar{
+    margin-top: 15px;
+}
+.logoTitle {
+    color: white !important;
+    font-size: 29px;
+    font-weight: 700;
+    font-family: 'Monserrat', sans-serif;
+    margin-left: 9rem;
+}
+.logoTitleScroll{
+    color: black !important;
+    font-size: 29px;
+    font-weight: 700;
+    font-family: 'Monserrat', sans-serif;
+    margin-left: 9rem;
+}
+.mainMenuBar{}
+.menuBar{ 
+    margin-left: 35rem;
+}
+.menuBarList {
+    margin: 0 13px;
+    color: white !important;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+.menuBarList:hover{
+    color: #20c997 !important;
+}
+.menuBarListScroll{
+    margin: 0 13px;
+    color: black !important;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+.menuBarList::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    border-bottom: 3px solid #20c997;
+    margin-top: 30px;
+    visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: .7s;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+.menuBarListScroll::before{
+    content: "";
+    position: absolute;
+    width: 90% ;
+    border-bottom: 3px solid #20c997;
+    margin-top: 30px;
+    visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: .7s;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+.menuBarList:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.menuBarListScroll:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Top Banner */
+.topBackgroundBanner{
+    position: relative;
+    background-image: url('../images/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 740px;
+    z-index: 3;
+}
+.Banneroverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 740px;
+    z-index: 3;
+    color: white;
+    background-color: black;
+    opacity: .85;
+}
+.bannerInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+.bannerMainTitle{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+.bannerTitle {
+    display: block;
+    font-size: 57px;
+    padding: 11px 0;
+    font-weight: 600;
+    color: white !important;
+}
+.bannerSubTitle {
+    display: block;
+    font-size: 21px;
+    font-weight: 700;
+}
+.socialLinks {
+    text-align: initial;
+    display: inline-block;
+}
+.navButton {
+    display: block;
+    background-color: #108260;
+    border-color: #108260;
+    color: white;
+    padding: 9px 32px;
+    margin: 41px auto 0;
+    transition: .7s;
+    font-size: 18px;
+    border-radius: 0;
+    opacity: 1 !important;
+}
+.navButton:hover{
+    color: white !important;
+    border-color: #1baa80 !important;
+    background-color: transparent !important;
+    transition: .7s;
+}
+.brandIcon {
+    padding-right: 28px;
+    color: white;
+    font-size: 22px;
+    padding-top: 21px;
+}
+
+/* About Me */
+.aboutOverlay{
+    position: relative;
+}
+.aboutOverlayTitle {
+    font-size: 120px;
+    color: rgb(128 128 128 / 13%);
+    opacity: .40;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+}
+.aboutTitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.aboutInfo{
+    text-align: start;
+}
+.infoMainTitle {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Monserrat', sans-serif;
+    margin-top: 15px;
+}
+.infoTitle{
+    color: #1baa80;
+}
+.aboutInfoTitle {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px 0 !important;
+    font-family: 'Monserrat', sans-serif;
+}
+.aboutInfoSub{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #343434;
+    padding-bottom: 5px;
+}
+.aboutInfoSubTitle {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #343434;
+}
+.aboutBtn {
+    text-align: left;
+}
+.aboutButton {
+    display: inline;
+    margin-right: 18px;
+    color: #1baa80 !important;
+    background-color: transparent !important;
+    padding: 9px 32px;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 0;
+    transition: 1s;
+    border: 1px solid #1baa80 !important;
+}
+.aboutButton:hover{
+    color: white !important;
+    background-color: #1baa80 !important;
+    transition: 1s;
+}
+
+/* Services */
+.mainServices{
+    background-color: rgb(248,249,250);
+}
+.Info{
+    color: black;
+}
+.mainServicesBox {
+    padding: 90px 0;
+}
+.servicesBox {
+    position: relative;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 0 #20c996a0;
+    text-align: start;
+    padding: 0 35px 27px;
+    border-radius: 10px;
+    background-color: white;
+}
+.countUp {
+    position: absolute;
+    font-size: 74px;
+    text-align: left;
+    z-index: 3;
+    color: #88888840;
+    font-weight: 600;
+}
+.Icon{
+    margin-bottom: 10px !important;
+}
+.servicesIcon {
+    color: black;
+    font-size: 27px;
+    padding-top: 48px;
+}
+.servicesTitle {
+    color: #1baa80;
+    font-size: 29px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 600;
+}
+.servicesSubTitle{
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Skills */
+.skillsMainBar {
+    padding: 90px 0 0;
+}
+.BarTitle {
+    display: inline-block;
+    text-align: inherit;
+    margin-bottom: 42px;
+    font-size: 25px;
+    border-bottom: 3px solid #1baa80;
+    padding-bottom: 5px;
+}
+.bar{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.barIcon{
+    font-size: 19px !important;
+}
+.barTitle{
+    font-size: 16px;
+    font-weight: 600;
+}
+.progress-bar{
+    background-color: #1baa80 !important;
+}
+.servicesBtn{
+    margin-top: 7px !important;
+}
+
+/* Latest Projects */
+.mainProjects {
+    padding-bottom: 49px;
+}
+.mainProjectsBox {
+    max-width: 95% !important;
+    margin-top: 50px;
+}
+.projectsImg {
+    position: relative;
+    margin-bottom: 25px;
+}
+.projectsImg img{
+    border: 1px solid transparent !important;
+    border-radius: 15px !important;
+    vertical-align: middle;
+    min-height: 369px !important;
+}
+.projectsInfo {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    width: 100%;
+    min-height: 369px;
+    top: 0%;
+    left: 0;
+    background-color: black;
+    opacity: 1;
+    transition: .8s;
+    transform: translateY(100%);
+    visibility: hidden;
+    border-radius: 15px;
+}
+.projectsImg:hover .projectsInfo{
+    transform: translateY(0);
+    visibility: visible;
+    border-radius: 15px;
+}
+.projectsTitle {
+    padding-top: 7.4rem;
+    font-size: 31px;
+    font-weight: 400;
+    font-family: 'Monserrat', sans-serif;
+    color: white;
+    display: block;
+}
+.projectsTitle:hover{
+    color: white;
+}
+.projectsSubTitle {
+    max-width: 300px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+.projectsIcon {
+    max-width: 50px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 196px;
+}
+.projectFont{
+    color: white;
+}
+.slick-dots {
+    bottom: -43px !important;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: white !important;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:before {
+    font-size: 11px !important;
+    opacity: 1 !important;
+    color: black !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #1baa80 !important;
+}
+.slick-next, .slick-arrow {
+    display: none !important;
+}
+.center .slick-center .project {
+    transform: scale(1.10);
+    z-index: 999;
+}
+.recharts-legend-wrapper {
+    left: 400px;
+}
+
+/* Contact */
+.contactMain {
+    padding-top: 70px;
+}
+.contactTitle{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Monserrat', sans-serif;
+}
+.contactSubTitle{
+    text-align: justify;
+    max-width: 500px;
+    padding-top: 10px;
+    font-family: 'Monserrat', sans-serif;
+}
+.Icon{
+    text-align: left;
+    font-size: 17px;
+    font-weight: 400;
+}
+.contactIcon{
+    color: #1baa80;
+    padding-right: 10px;
+}
+.formInput {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    background: white;
+    color: black !important;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid #343434;
+}
+.formInput:focus{
+    border: 1px solid #1baa80 !important;
+}
+.formText {
+    width: 100%;
+    background: white;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    height: 150px;
+}
+.contactBtn{
+    display: block !important;
+    width: 100%;
+    color: white !important;
+    background-color: #1baa80 !important;
+    transition: 1s;
+}
+.contactBtn:hover{
+    color: #1baa80 !important;
+    background-color: transparent !important;
+    transition: 1s;
+}
+
+/* Footer Area */
+.footerArea {
+    background-color: rgb(220 220 220);
+}
+.Copyright{
+    padding: 25px 0;
+}
+.copyrightTitle{
+    margin-bottom: 0 !important;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Monserrat', sans-serif;
+}
+
+

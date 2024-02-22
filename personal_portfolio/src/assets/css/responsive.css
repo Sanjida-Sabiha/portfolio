@@ -1,0 +1,183 @@
+
+@media (max-width: 575.98px) {
+    .bm-burger-button {
+        width: 27px !important;
+        height: 19px !important;
+    }
+    .bannerTitle {
+        font-size: 28px !important;
+    }
+    .bannerSubTitle {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+    .aboutOverlayTitle {
+        font-size: 70px;
+    }
+    .infoMainTitle {
+        font-size: 26px !important;
+    }
+    .aboutInfoTitle {
+        font-size: 19px;
+    }
+    .aboutButton {
+        margin-right: 16px !important;
+    }
+    .mainServicesBox {
+        padding: 0 !important;
+    }
+    .servicesBox {
+        margin-top: 39px !important;
+    }
+    .BarTitle {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+    .radialBar {
+        width: 100% !important;
+        margin-left: -63px;
+        margin-top: 0 !important;
+    }
+    .recharts-wrapper {
+        width: 445px !important;
+    }
+    .recharts-legend-wrapper {
+        left: 294px !important;
+    }
+    .aboutOverlayTitle {
+        font-size: 64px !important;
+    }
+    .contactMain {
+        padding-top: 70px;
+        flex-direction: column;
+    }
+    .contactInfo {
+        margin-bottom: 62px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .bm-burger-button {
+        width: 27px !important;
+        height: 19px !important;
+    }
+    .bannerTitle {
+        font-size: 40px !important;
+    }
+    .bannerSubTitle {
+        font-size: 18px !important;
+    }
+    .navButton {
+        margin: 41px auto 0 !important;
+    }
+    .aboutOverlayTitle {
+        font-size: 94px !important;
+    }
+    .infoMainTitle {
+        font-size: 36px !important;
+    }
+    .mainServicesBox {
+        padding: 0 !important;
+    
+    }
+    .servicesBox {
+        margin-top: 39px !important;
+    }
+    .radialBar {
+        width: 100% !important;
+        margin-left: -57px;
+    }
+    .recharts-wrapper {
+        width: 549px !important;
+    }
+    .BarTitle {
+        margin-bottom: 0 !important;
+        margin-top: 40px;
+    }
+    
+    .contactMain {
+        flex-direction: column !important;
+    }
+    .contactInfo {
+        margin-bottom: 62px;
+    }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .bm-burger-button {
+        width: 27px !important;
+        height: 19px !important;
+    }
+    .bannerTitle {
+        font-size: 50px !important;
+    }
+    .infoMainTitle {
+        font-size: 47px !important;
+    }
+    .mainServicesBox {
+        padding: 0 !important;
+    }
+    .servicesBox {
+        margin-top: 50px !important;
+    }
+    .navButton {
+        margin: 41px auto 0 !important;
+    }
+    .skillsMainBar {
+        padding: 35px 0 0 !important;
+    }
+    .BarTitle {
+        margin-top: 50px;
+        margin-bottom: 0 !important;
+    }
+    .contactMain {
+        flex-direction: column !important;
+    }
+    .contactInfo {
+        margin-bottom: 62px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .bm-burger-button {
+        width: 27px !important;
+        height: 19px !important;
+    }
+    .servicesTitle {
+        font-size: 26px !important;
+    }
+    .navButton {
+        margin: 41px auto 0 !important;
+    }
+    .recharts-legend-wrapper {
+        left: 515px !important;
+    }
+    .contactSubTitle {
+        max-width: 375px !important;
+    }
+    .skillsMainBar {
+        padding: 25px 0 0 !important;
+    }
+    .BarTitle {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .bm-burger-button {
+        width: 27px !important;
+        height: 19px !important;
+    }
+    .recharts-wrapper {
+        width: 585px !important;
+    }
+}
